@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>João Pedro | Tecnologia, IA & Desenvolvimento</title>
+
+    <meta
+        name="description"
+        content="Portfólio profissional de João Pedro - Inteligência Artificial, automação de processos, agentes autônomos e desenvolvimento de software."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================================
+         HEADER / NAVEGAÇÃO
+         ========================================================================== -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                JP<span>.</span>
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Formação</a></li>
+                <li><a href="#contact" class="nav-cta">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ==========================================================================
+             HERO SECTION (COM CANVAS DE PARTÍCULAS & FOTO JOAO.JPG)
+             ========================================================================== -->
+        <section class="hero" id="home">
+            <!-- Canvas interativo com partículas discretas em JavaScript vanilla -->
+            <canvas id="hero-particles" class="hero-canvas"></canvas>
+
+            <div class="container hero-inner">
+
+                <!-- Coluna de Apresentação -->
+                <div class="hero-content">
+
+                    <span class="hero-eyebrow hero-animate-1">
+                        <span class="dot"></span>
+                        Olá, eu sou João Pedro.
+                    </span>
+
+                    <h1 class="hero-animate-2">
+                        Tecnologia, IA<br>
+                        <span class="editorial-accent">&amp; desenvolvimento.</span>
+                    </h1>
+
+                    <p class="hero-subtitle hero-animate-3">
+                        Desenvolvo soluções que conectam Inteligência Artificial, automação e engenharia de software a problemas reais de negócio.
+                    </p>
+
+                    <div class="hero-actions hero-animate-4">
+                        <a href="#projects" class="btn btn-primary">
+                            Projetos
+                        </a>
+
+                        <a href="#experience" class="btn btn-secondary">
+                            Experiência
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/joaopedrochiachio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                        >
+                            LinkedIn ↗
+                        </a>
+
+                        <a
+                            href="https://github.com/joaopedrochiachio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                        >
+                            GitHub ↗
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Coluna da Fotografia - Moldura Editorial -->
+                <div class="hero-photo-container hero-animate-5">
+                    <div class="hero-photo-frame">
+                        <div class="photo-inner">
+                            <img
+                                src="joao.jpg"
+                                alt="Fotografia de João Pedro"
+                                class="hero-photo"
+                                onerror="this.src='assets/images/joao.jpg'"
+                            >
+                        </div>
+                        <div class="photo-caption">
+                            <span>João Pedro</span>
+                            <span class="caption-role">AI · Software Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barra de Destaques da Trajetória Real -->
+                <div class="hero-stats hero-animate-6">
+                    <div class="stat-item">
+                        <div class="stat-val">AI</div>
+                        <div class="stat-desc">Inteligência Artificial &amp; Agentes</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-val">3+</div>
+                        <div class="stat-desc">Experiências em IA, Dev &amp; CyberSec</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-val">Google</div>
+                        <div class="stat-desc">Embaixador Estudantil 2026</div>
+                    </div>
+
+                    <div class="stat-item">
+                        <div class="stat-val stat-val-long">Engenharia de Software</div>
+                        <div class="stat-desc">INATEL • 2024 — 2029</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             ÁREAS DE ATUAÇÃO
+             ========================================================================== -->
+        <section class="section section-alt">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-tag">Especialidades</span>
+                    <h2>O que eu faço</h2>
+                    <p>Foco na aplicação prática de tecnologia, engenharia de software e inteligência artificial corporativa.</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card reveal">
+                        <div class="service-icon-box">🧠</div>
+                        <h3>Artificial Intelligence & Agents</h3>
+                        <p>
+                            Desenvolvimento de agentes corporativos, arquiteturas RAG, integração de LLMs e parametrização com Copilot Studio, focando em governança e escalabilidade.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon-box">⚡</div>
+                        <h3>Automation & Integration</h3>
+                        <p>
+                            Automação inteligente de processos de negócios com Power Automate, conectando APIs REST, webhooks e ferramentas corporativas.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <div class="service-icon-box">💻</div>
+                        <h3>Software & Full-Stack Dev</h3>
+                        <p>
+                            Construção de aplicações escaláveis utilizando React, Next.js, TypeScript e Node.js, com modelagem de bancos de dados SQL e usabilidade consistente.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             SOBRE MIM
+             ========================================================================== -->
+        <section class="section" id="about">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-tag">Trajetória</span>
+                    <h2>Sobre mim</h2>
+                    <p>Tecnologia aplicada a problemas reais, com mentalidade analítica e foco em entrega de valor.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: flex-start;" class="reveal">
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 16px; line-height: 1.7;">
+                            Minha trajetória com tecnologia começou antes da graduação, passando por informática e telecomunicações até chegar à <strong>Engenharia de Software no Inatel</strong>. Esse caminho me proporcionou uma base integrada e multidisciplinar — desde fundamentos de redes, infraestrutura e telecomunicações até desenvolvimento web, computação em nuvem e análise de dados.
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 16px; line-height: 1.7;">
+                            Hoje concentro grande parte do meu trabalho na aplicação prática de <strong>Inteligência Artificial e automação em ambientes corporativos</strong>. Atuo desenvolvendo agentes de IA, fluxos inteligentes, integrações via APIs e provas de conceito para problemas reais de negócio.
+                        </p>
+                        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.7;">
+                            Em paralelo à atuação corporativa e aos estudos de graduação, atuo como <strong>Embaixador Estudantil do Google 2026</strong>, fomentando o compartilhamento de conhecimento em IA e nuvem na comunidade acadêmica e desenvolvendo projetos práticos com rigor técnico e foco em impacto real.
+                        </p>
+                    </div>
+
+                    <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 32px; box-shadow: var(--shadow-subtle);">
+                        <h4 style="font-size: 1.1rem; margin-bottom: 18px; color: var(--text-main);">Princípios de Trabalho</h4>
+                        <ul style="display: flex; flex-direction: column; gap: 14px;">
+                            <li style="display: flex; gap: 12px; font-size: 0.94rem; color: var(--text-muted);">
+                                <span style="color: var(--accent); font-weight: bold;">—</span>
+                                <span><strong>Foco em Resultados:</strong> A tecnologia deve resolver dores operacionais e comerciais tangíveis.</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; font-size: 0.94rem; color: var(--text-muted);">
+                                <span style="color: var(--accent); font-weight: bold;">—</span>
+                                <span><strong>Governança e Confiabilidade:</strong> Construção de sistemas e agentes com segurança, validação e qualidade.</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; font-size: 0.94rem; color: var(--text-muted);">
+                                <span style="color: var(--accent); font-weight: bold;">—</span>
+                                <span><strong>Aprendizado Contínuo:</strong> Pesquisa constante em modelos de linguagem, novas arquiteturas e frameworks.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             EXPERIÊNCIA PROFISSIONAL
+             ========================================================================== -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-tag">Carreira & Atuação</span>
+                    <h2>Experiência Profissional</h2>
+                    <p>Histórico comprovado de entregas em Inteligência Artificial, desenvolvimento de sistemas e cibersegurança.</p>
+                </div>
+
+                <div class="experience-grid">
+
+                    <!-- EXPERIÊNCIA 1: PRÁTICA -->
+                    <article class="experience-card reveal">
+                        <div class="exp-period">
+                            <span>Jun 2026 — Atual</span>
+                            <span class="badge badge-current">Atual</span>
+                        </div>
+                        <div class="exp-company-group">
+                            <span class="exp-company-name">Prática</span>
+                            <span class="badge badge-type">Tempo integral</span>
+                        </div>
+                        <div class="exp-role-title">Assistente de Desenvolvimento em IA</div>
+                        <p class="exp-summary">
+                            Atuação no Centro de Excelência (CoE) com foco no ciclo completo de desenvolvimento, validação e sustentação de soluções corporativas em Inteligência Artificial.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li><strong>POCs &amp; Modelos:</strong> Construção ativa de Provas de Conceito e validação técnica de LLMs e novas tecnologias de IA.</li>
+                            <li><strong>Integrações Críticas:</strong> Parametrização e integração de agentes inteligentes e ferramentas de IA para fluxos de negócio.</li>
+                            <li><strong>Governança &amp; Escala:</strong> Criação e contribuição para padronização, conformidade e governança de soluções de IA na organização.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">AI Agents</span>
+                            <span class="tag">Copilot Studio</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Power Automate</span>
+                            <span class="tag">Governança de IA</span>
+                        </div>
+                    </article>
+
+                    <!-- EXPERIÊNCIA 2: HT CABOS -->
+                    <article class="experience-card reveal">
+                        <div class="exp-period">
+                            <span>Dez 2025 — Jun 2026</span>
+                            <span class="badge badge-location">No local</span>
+                        </div>
+                        <div class="exp-company-group">
+                            <span class="exp-company-name">HT Cabos e Tecnologia</span>
+                            <span class="badge badge-type">Estágio</span>
+                        </div>
+                        <div class="exp-role-title">Estagiário em Desenvolvimento</div>
+                        <p class="exp-summary">
+                            Desenvolvimento de sistemas corporativos internos, construção de interfaces interativas modernas, regras de negócio e consultas estruturadas a bancos de dados.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li><strong>Frontend &amp; UX:</strong> Criação de componentes escaláveis e interfaces dinâmicas utilizando React, Next.js e TypeScript.</li>
+                            <li><strong>Backend &amp; SQL:</strong> Implementação de regras de negócio em Node.js com consultas e análises estruturadas em banco de dados SQL.</li>
+                            <li><strong>Resolução de Problemas:</strong> Otimização de processos internos e resolução de chamados técnicos para recursos estáveis.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </article>
+
+                    <!-- EXPERIÊNCIA 3: INATEL (CYBERSEC) -->
+                    <article class="experience-card reveal">
+                        <div class="exp-period">
+                            <span>Fev 2025 — Ago 2025</span>
+                            <span class="badge badge-location">No local</span>
+                        </div>
+                        <div class="exp-company-group">
+                            <span class="exp-company-name">Inatel</span>
+                            <span class="badge badge-type">Estágio</span>
+                        </div>
+                        <div class="exp-role-title">Estagiário em CyberSec</div>
+                        <p class="exp-summary">
+                            Atuação em segurança defensiva e infraestrutura, identificação preventiva de vulnerabilidades em sistemas e suporte em resposta a incidentes de rede.
+                        </p>
+                        <ul class="exp-bullets">
+                            <li><strong>Análise de Riscos:</strong> Condução de testes para identificar vulnerabilidades e mitigar riscos em sistemas e redes corporativas.</li>
+                            <li><strong>Monitoramento de Redes:</strong> Acompanhamento contínuo de logs e tráfego de dados para detecção e contenção ágil de incidentes.</li>
+                            <li><strong>Conformidade &amp; Postura:</strong> Aplicação de medidas de conformidade e suporte na disseminação de boas práticas de segurança.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="tag">Cibersegurança</span>
+                            <span class="tag">Redes</span>
+                            <span class="tag">Vulnerabilidades</span>
+                            <span class="tag">Incident Response</span>
+                            <span class="tag">Compliance</span>
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <!-- ==========================================================================
+                     DESTAQUE ESPECIAL: GOOGLE STUDENT AMBASSADOR
+                     ========================================================================== -->
+                <div class="google-ambassador-card reveal">
+                    <div class="google-card-header">
+                        <div class="google-title-wrapper">
+                            <div class="google-icon-box">
+                                <svg viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.35 24 12 24z"/>
+                                    <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.35 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Embaixador Estudantil</h3>
+                                <div class="google-org">Google · Educação & Tecnologia</div>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                            <span class="google-verified-badge">Nomeação Oficial 2026</span>
+                            <span class="exp-duration">Jul de 2026 — o momento · 3 meses</span>
+                        </div>
+                    </div>
+
+                    <p class="google-desc">
+                        Atuação como <strong>Embaixador Estudantil do Google 2026</strong>, promovendo inovação técnica, comunidade e disseminação de conhecimentos sobre Inteligência Artificial, ferramentas em nuvem e ecossistema de desenvolvimento Google no ambiente acadêmico e corporativo.
+                    </p>
+
+                    <div class="exp-tags">
+                        <span class="tag">Google Student Ambassador</span>
+                        <span class="tag">Comunidade Técnica</span>
+                        <span class="tag">Inovação em IA</span>
+                        <span class="tag">Liderança Estudantil</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             PROJETOS EM DESTAQUE (EDITORIAL STYLE COM DOIS DESTAQUES)
+             ========================================================================== -->
+        <section class="section" id="projects">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfólio Selecionado</span>
+                    <h2>Projetos em Destaque</h2>
+                    <p>Casos reais conectando Inteligência Artificial adaptativa, arquiteturas escaláveis e soluções para o mercado.</p>
+                </div>
+
+                <div class="projects-editorial">
+
+                    <!-- PROJETO 01: VITALIDADE SENIOR AI (DESTAQUE PRINCIPAL) -->
+                    <article class="editorial-project featured reveal">
+                        <div class="project-meta-top">
+                            <div class="project-tag-group">
+                                <span class="project-num">01</span>
+                                <span class="project-badge-context">Destaque Principal • Projeto FETIN — INATEL</span>
+                            </div>
+                            <span class="project-concept">"Longevidade na palma da mão através de IA adaptativa."</span>
+                        </div>
+
+                        <h3>Vitalidade Senior AI</h3>
+
+                        <p class="project-desc">
+                            Ecossistema digital voltado à longevidade ativa de pessoas com 60 anos ou mais, utilizando Inteligência Artificial para oferecer acompanhamento personalizado de exercícios, alimentação, rotina e bem-estar.
+                        </p>
+
+                        <div class="project-highlights-strip">
+                            <span>IA Adaptativa</span>
+                            <span class="strip-dot">•</span>
+                            <span>Digital Caregiver</span>
+                            <span class="strip-dot">•</span>
+                            <span>Dead Man's Switch (Segurança)</span>
+                            <span class="strip-dot">•</span>
+                            <span>Comunicação Empática</span>
+                            <span class="strip-dot">•</span>
+                            <span>PWA</span>
+                        </div>
+
+                        <div class="exp-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Gemini API</span>
+                            <span class="tag">PWA</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <div class="project-links">
+                                <a
+                                    href="https://vitality-ai-mu.vercel.app/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link project-link-primary"
+                                >
+                                    Ver projeto <span class="arrow">↗</span>
+                                </a>
+
+                                <a
+                                    href="https://github.com/vitality60AI-FETIN/VitalityAI"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link"
+                                >
+                                    GitHub <span class="arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJETO 02: REFRINOVA -->
+                    <article class="editorial-project reveal">
+                        <div class="project-meta-top">
+                            <div class="project-tag-group">
+                                <span class="project-num">02</span>
+                                <span class="project-badge-context">Web Development • Corporate Website</span>
+                            </div>
+                        </div>
+
+                        <h3>Refrinova</h3>
+
+                        <p class="project-desc">
+                            Website institucional desenvolvido para a Refrinova, empresa especializada em engenharia térmica e refrigeração industrial. O projeto apresenta de forma clara os serviços, soluções e projetos da empresa, criando uma presença digital profissional e direcionada à geração de oportunidades comerciais.
+                        </p>
+
+                        <div class="exp-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Corporate Website</span>
+                            <span class="tag">Responsive Design</span>
+                            <span class="tag">UI</span>
+                            <span class="tag">Landing Page</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <div class="project-links">
+                                <a
+                                    href="https://refrinova.ind.br/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-link project-link-primary"
+                                >
+                                    Ver projeto <span class="arrow">↗</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             SKILLS (TECNOLOGIAS & FERRAMENTAS)
+             ========================================================================== -->
+        <section class="section section-alt" id="skills">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-tag">Stack Técnica</span>
+                    <h2>Skills & Ferramentas</h2>
+                    <p>Arsenal tecnológico aplicado em projetos reais, desenvolvimento ágil e soluções corporativas.</p>
+                </div>
+
+                <div class="skills-bar-grid">
+
+                    <!-- SKILL 1: IA & LLMS (100%) -->
+                    <article class="skill-bar-card reveal">
+                        <div class="skill-bar-header">
+                            <h3>Inteligência Artificial &amp; LLMs</h3>
+                            <span class="skill-bar-percent">100%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-progress="100%"></div>
+                        </div>
+                        <p class="skill-tags-text">Copilot Studio · Microsoft 365 Copilot · AI Agents · Prompt Engineering · RAG · AI Governance</p>
+                    </article>
+
+                    <!-- SKILL 2: AUTOMAÇÕES & INTEGRAÇÕES (98%) -->
+                    <article class="skill-bar-card reveal">
+                        <div class="skill-bar-header">
+                            <h3>Automações &amp; Integrações</h3>
+                            <span class="skill-bar-percent">98%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-progress="98%"></div>
+                        </div>
+                        <p class="skill-tags-text">Power Automate · APIs REST · Webhooks · SharePoint</p>
+                    </article>
+
+                    <!-- SKILL 3: DESENVOLVIMENTO DE SOFTWARE (78%) -->
+                    <article class="skill-bar-card reveal">
+                        <div class="skill-bar-header">
+                            <h3>Desenvolvimento de Software</h3>
+                            <span class="skill-bar-percent">78%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-progress="78%"></div>
+                        </div>
+                        <p class="skill-tags-text">TypeScript · JavaScript (ES6+) · React · Next.js · Node.js · C++ · Git &amp; GitHub</p>
+                    </article>
+
+                    <!-- SKILL 4: DADOS & ANALYTICS (55%) -->
+                    <article class="skill-bar-card reveal">
+                        <div class="skill-bar-header">
+                            <h3>Dados &amp; Analytics</h3>
+                            <span class="skill-bar-percent">55%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-progress="55%"></div>
+                        </div>
+                        <p class="skill-tags-text">SQL · Metabase · Modelagem de Dados · Excel</p>
+                    </article>
+
+                    <!-- SKILL 5: CIBERSEGURANÇA & REDES (48%) -->
+                    <article class="skill-bar-card reveal">
+                        <div class="skill-bar-header">
+                            <h3>Cibersegurança &amp; Redes</h3>
+                            <span class="skill-bar-percent">48%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-progress="48%"></div>
+                        </div>
+                        <p class="skill-tags-text">Fundamentos de Cibersegurança · Redes · Vulnerabilidades · Monitoramento · Incident Response</p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             FORMAÇÃO & CERTIFICAÇÕES
+             ========================================================================== -->
+        <section class="section" id="education">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-tag">Educação &amp; Aprendizado</span>
+                    <h2>Formação &amp; Certificações</h2>
+                    <p>Base sólida de engenharia e telecomunicações aliada a especializações práticas e contínuas.</p>
+                </div>
+
+                <!-- 1. FORMAÇÃO ACADÊMICA -->
+                <div class="education-subheading reveal">
+                    <span>Formação Acadêmica</span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="education-timeline-list reveal">
+
+                    <!-- ITEM 1: INATEL (DESTAQUE MÁXIMO) -->
+                    <div class="education-item featured">
+                        <div class="education-item-header">
+                            <span class="education-period">Julho de 2024 — Julho de 2029</span>
+                            <span class="education-status-badge current">Graduação • Em andamento</span>
+                        </div>
+                        <h3>Engenharia de Software</h3>
+                        <div class="education-institution">
+                            Instituto Nacional de Telecomunicações — Inatel
+                        </div>
+                        <div class="education-skills">
+                            <span>Competências:</span> Engenharia de Software · Tecnologia da Informação · Desenvolvimento · Tecnologia
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2: ETEC GETÚLIO VARGAS -->
+                    <div class="education-item">
+                        <div class="education-item-header">
+                            <span class="education-period">2021 — 2022</span>
+                            <span class="education-status-badge">Técnico • Concluído</span>
+                        </div>
+                        <h3>Técnico em Telecomunicações</h3>
+                        <div class="education-institution">
+                            Etec Getúlio Vargas
+                        </div>
+                        <div class="education-skills">
+                            <span>Competências:</span> Telecomunicações · 5G · Redes · Tecnologia
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3: MICROCAMP -->
+                    <div class="education-item">
+                        <div class="education-item-header">
+                            <span class="education-period">Janeiro de 2017 — Julho de 2019</span>
+                            <span class="education-status-badge">Concluído</span>
+                        </div>
+                        <h3>Informática e Tecnologia</h3>
+                        <div class="education-institution">
+                            Microcamp
+                        </div>
+                        <div class="education-skills">
+                            <span>Competências:</span> HTML · Aplicações Web · Informática · Tecnologia
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2. CURSOS & CERTIFICAÇÕES -->
+                <div class="education-subheading reveal">
+                    <span>Cursos &amp; Certificações</span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="certifications-compact-grid reveal">
+
+                    <!-- CERT 1: METABASE UDEMY -->
+                    <div class="cert-item">
+                        <div>
+                            <div class="cert-item-top">
+                                <span class="cert-issuer">Udemy</span>
+                                <span>Emitida em Abril de 2026</span>
+                            </div>
+                            <h4>METABASE: Vá do ZERO ao Avançado! Completo</h4>
+                            <div class="cert-skills">
+                                Metabase · SQL · MySQL · Business Intelligence · Data Analytics
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-code">ID: UC-a0959f47</span>
+                            <a
+                                href="https://ude.my/UC-a0959f47-18f5-4907-b2e3-f565a61e1748"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                            >
+                                Ver credencial ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CERT 2: GCP ASSOCIATE CLOUD ENGINEER -->
+                    <div class="cert-item">
+                        <div>
+                            <div class="cert-item-top">
+                                <span class="cert-issuer">Udemy</span>
+                                <span>Emitida em Julho de 2025</span>
+                            </div>
+                            <h4>Google Cloud Associate Cloud Engineer (GCP)</h4>
+                            <div class="cert-skills">
+                                Google Cloud Platform · Cloud Computing · Infraestrutura em Nuvem
+                            </div>
+                        </div>
+                        <div class="cert-footer">
+                            <span class="cert-code">ID: UC-62ab1a5e</span>
+                            <a
+                                href="https://ude.my/UC-62ab1a5e-2b2c-4403-bfda-1edf497e4923"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                            >
+                                Ver credencial ↗
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================================================
+             CONTATO
+             ========================================================================== -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+
+                <div class="contact-card reveal">
+                    <span class="section-tag">Conecte-se</span>
+                    <h2>Vamos conversar?</h2>
+                    <p>
+                        Estou sempre aberto a novas oportunidades profissionais, trocas de ideias sobre Inteligência Artificial, agentes autônomos, parcerias e projetos inovadores.
+                    </p>
+
+                    <div class="contact-links">
+                        <a
+                            href="https://www.linkedin.com/in/joaopedrochiachio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary"
+                        >
+                            Conectar no LinkedIn ↗
+                        </a>
+
+                        <a
+                            href="mailto:chiachioo04@email.com"
+                            class="btn btn-secondary"
+                        >
+                            Enviar E-mail ↗
+                        </a>
+
+                        <a
+                            href="https://github.com/joaopedrochiachio/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-outline"
+                        >
+                            Perfil no GitHub ↗
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================================================
+         FOOTER
+         ========================================================================== -->
+    <footer class="footer container">
+        <span>
+            João Pedro © 2026 · Tecnologia, IA &amp; Desenvolvimento
+        </span>
+
+        <a href="#home">
+            Voltar ao topo ↑
+        </a>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
