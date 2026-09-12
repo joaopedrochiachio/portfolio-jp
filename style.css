@@ -546,6 +546,118 @@ img {
 }
 
 /* ==========================================================================
+   SCROLL REVEAL (ANIMAÇÃO SUAVE & FLUIDA DE ENTRADA AO ROLAR)
+   ========================================================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito cascata suave (stagger) para cartões em grades */
+.services-grid .service-card:nth-child(1),
+.experience-grid .experience-card:nth-child(1),
+.editorial-projects-list .editorial-project:nth-child(1),
+.skills-bar-grid .skill-bar-card:nth-child(1),
+.education-timeline-list .education-item:nth-child(1),
+.certifications-compact-grid .cert-item:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.services-grid .service-card:nth-child(2),
+.experience-grid .experience-card:nth-child(2),
+.editorial-projects-list .editorial-project:nth-child(2),
+.skills-bar-grid .skill-bar-card:nth-child(2),
+.education-timeline-list .education-item:nth-child(2),
+.certifications-compact-grid .cert-item:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.services-grid .service-card:nth-child(3),
+.experience-grid .experience-card:nth-child(3),
+.skills-bar-grid .skill-bar-card:nth-child(3),
+.education-timeline-list .education-item:nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+.skills-bar-grid .skill-bar-card:nth-child(4) {
+    transition-delay: 0.09s;
+}
+
+.skills-bar-grid .skill-bar-card:nth-child(5) {
+    transition-delay: 0.18s;
+}
+
+/* ==========================================================================
+   SOBRE MIM (LAYOUT & PRINCÍPIOS)
+   ========================================================================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-text p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 32px;
+    box-shadow: var(--shadow-subtle);
+    transition: var(--transition);
+}
+
+.about-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-card);
+}
+
+.about-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    color: var(--text-main);
+}
+
+.about-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.about-card li {
+    display: flex;
+    gap: 12px;
+    font-size: 0.94rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.about-card .bullet {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* ==========================================================================
    SEÇÕES GLOBAIS
    ========================================================================== */
 
@@ -1418,8 +1530,9 @@ img {
     .nav-links {
         position: absolute;
         top: 72px;
-        right: 24px;
-        width: 250px;
+        right: 20px;
+        width: calc(100% - 40px);
+        max-width: 280px;
         padding: 20px;
         background: #ffffff;
         border: 1px solid var(--border-color);
@@ -1444,6 +1557,11 @@ img {
         justify-content: center;
     }
 
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
     .editorial-project {
         padding: 32px 28px;
     }
@@ -1454,13 +1572,21 @@ img {
 }
 
 @media (max-width: 640px) {
+    .section {
+        padding: 68px 0;
+    }
+
+    .container {
+        width: calc(100% - 36px);
+    }
+
     .hero {
-        padding-top: 110px;
-        padding-bottom: 60px;
+        padding-top: 105px;
+        padding-bottom: 56px;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: clamp(2.1rem, 7.5vw, 2.5rem);
     }
 
     .hero-actions {
@@ -1483,6 +1609,10 @@ img {
 
     .hero-stats {
         grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: 24px 20px;
     }
 
     .skills-bar-grid {
@@ -1520,6 +1650,15 @@ img {
         padding: 36px 20px;
     }
 
+    .contact-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-links .btn {
+        width: 100%;
+    }
+
     .footer {
         flex-direction: column;
         gap: 14px;
@@ -1527,7 +1666,40 @@ img {
     }
 }
 
+@media (max-width: 480px) {
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .section-header h2 {
+        font-size: 1.85rem;
+    }
+
+    .stat-item {
+        padding: 14px 14px;
+    }
+
+    .experience-card,
+    .google-ambassador-card {
+        padding: 22px 18px;
+    }
+
+    .editorial-project {
+        padding: 22px 18px;
+    }
+
+    .skill-bar-card {
+        padding: 22px 18px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
     .skill-fill {
         transition: none !important;
     }

@@ -37,6 +37,7 @@ window.addEventListener("scroll", () => {
 // ==========================================================================
 
 const revealElements = document.querySelectorAll(".reveal");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const observer = new IntersectionObserver(
     (entries, obs) => {
@@ -57,13 +58,21 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.08,
-        rootMargin: "0px 0px -30px 0px"
+        threshold: 0.05,
+        rootMargin: "0px 0px -40px 0px"
     }
 );
 
 revealElements.forEach(element => {
-    observer.observe(element);
+    if (prefersReducedMotion) {
+        element.classList.add("active");
+        const skillFills = element.querySelectorAll(".skill-fill");
+        skillFills.forEach(fill => {
+            if (fill.dataset.progress) fill.style.width = fill.dataset.progress;
+        });
+    } else {
+        observer.observe(element);
+    }
 });
 
 // ==========================================================================
